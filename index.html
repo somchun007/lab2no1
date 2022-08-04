@@ -16,14 +16,16 @@
                 <option value="MA">MA / Mathematics</option>
                 <option value="IMI">IMI / Department of Industrial Physics and Medical Instrumentation</option>
                 <option value="AS">AS / Applied Statistics</option>
-                <option value="AFET">CS / Agro-Industrial, Food and Environmental Technology</option>
+                <option value="AFET">AFET / Agro-Industrial, Food and Environmental Technology</option>
             </select>
         </div>
+        <br>
 
         <div class="title2">
             <label for="transfer">จำนวนเงิน: </label>
             <input type="text" name="money" placeholder="0.00">
         </div>
+        <br>
 
         <div class="title3">
             <label for="food">เรียงลำดับอาหารที่ชอบมากที่สุด: </label>
@@ -33,30 +35,35 @@
                 </li>
             </ol>
         </div>
+        <br>
 
         <div class="title4">
             <label for="electricbill">ค่าไฟ 3 เดือนที่ผ่านมา: </label>
             <input type="text" name="money" placeholder="0.00">
 
         </div>
+        <br>
 
         <div class="title5">
-            <label for="id">รหัสบัตรประชาชน</label>
-            <input type="text">
+            <label for="id">รหัสบัตรประชาชน: </label>
+            <input type="text" pattern="[0-9]{13}">
         </div>
-        
+        <br>
+
         <div class="title6">
             <label for="book">ความพึงพอใจหนังสือเล่นนี้</label>
-            <input type="radio" name="content" value="verygood">ชอบมาก
-            <input type="radio" name="content" value="good">ชอบ
-            <input type="radio" name="content" value="middle">เฉยๆ
-            <input type="radio" name="content" value="dontlike">ไม่ชอบ
+            <input type="radio" id="like" name="content" value="verygood">ชอบมาก
+            <input type="radio" id="like" name="content" value="good">ชอบ
+            <input type="radio" id="like" name="content" value="middle">เฉยๆ
+            <input type="radio" id="like" name="content" value="dontlike">ไม่ชอบ
         </div>
-
+        <br>
+        
         <div class="title7">
             <label for="sick">อาการป่วย: </label>
             <input type="text">
         </div>
+        <br>
 
         <div class="title8">
             <label for="vaccine">3เดือนที่ผ่านมา คุณได้รับวัคซียนหรือไม่</label>
@@ -65,21 +72,25 @@
                 <input type="radio" name="content2" value="no">ไม่รับ
             </p>
         </div>
+        <br>
 
-        <!-- <div class="title9">
-            <label for="id">รหัสบัตรประชาชน</label>
-            <input type="text">
+        <div class="title9">
+            <label for="password">รหัสผ่าน: </label>
+            <input type="password">
         </div>
+        <br>
 
         <div class="title10">
-            <label for="id">รหัสบัตรประชาชน</label>
-            <input type="text">
+            <label for="class">เวลาเข้าเรียนและสิ้นสุดการเรียน: </label>
+            <input type="time" id="classtime" name="classtime" min="09:00" max="21:00" required> <b>-</b>
+            <input type="time" id="classtime" name="classtime" min="09:00" max="21:00">
         </div>
+        <br>
 
         <div class="title11">
-            <label for="id">รหัสบัตรประชาชน</label>
-            <input type="text">
-        </div> -->
+            <label for="doctor">วันเวลาที่ต้องพบหมอ: </label>
+            <input type="datetime-local" id="meetingtime" name="meetingtime" min="2022-07-01T00:00" max="2022-08-10T00:00">
+        </div>
 
     </form>
 
