@@ -7,92 +7,100 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get" class="example">
-        <div class="title1">
-            <label for="fullbrancename">ชื่อสาขา: </label>
-            <select name="branchs">
-                <option value="CS">CS / Computer Science</option>
-                <option value="IC">IC / Industrial Chemistry</option>
-                <option value="MA">MA / Mathematics</option>
-                <option value="IMI">IMI / Department of Industrial Physics and Medical Instrumentation</option>
-                <option value="AS">AS / Applied Statistics</option>
-                <option value="AFET">AFET / Agro-Industrial, Food and Environmental Technology</option>
-            </select>
-        </div>
-        <br>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-        <div class="title2">
-            <label for="transfer">จำนวนเงิน: </label>
-            <input type="text" name="money" placeholder="0.00">
-        </div>
-        <br>
+    <style>
+        table, td{
+            border: 1.5px solid rgb(46, 95, 9);
+            border-collapse: collapse;
+            padding: 10px;
+        }
 
-        <div class="title3">
-            <label for="food">เรียงลำดับอาหารที่ชอบมากที่สุด: </label>
-            <ol>
-                <li>
+    </style>
+</head>
+<body>
 
-                </li>
-            </ol>
-        </div>
-        <br>
+    <table >
 
-        <div class="title4">
-            <label for="electricbill">ค่าไฟ 3 เดือนที่ผ่านมา: </label>
-            <input type="text" name="money" placeholder="0.00">
+        <tr style="background-color: rgb(227, 242, 204); text-align: center;" >
+            <td style="width: 5px;"></td>
+            <td style="width: 350px;">ตัวอย่างข้อมูล</td>
+            <td style="width: 250px;">Input type?</td>
+        </tr>
+            
+        <tr style="background-color: rgb(179, 205, 134);">
+            <td>1.</td>
+            <td>ชื่อเต็ม/ย่อของสาขาวิชา</td>
+            <td style="text-align: center;">text</td>
+        </tr>
 
-        </div>
-        <br>
+        <tr style="background-color: rgb(227, 242, 204);">
+            <td>2.</td>
+            <td>จำนวนเงินที่จะโอน</td>
+            <td style="text-align: center;">text</td>
+        </tr>
 
-        <div class="title5">
-            <label for="id">รหัสบัตรประชาชน: </label>
-            <input type="text" pattern="[0-9]{13}" >
-        </div>
-        <br>
+        <tr style="background-color: rgb(179, 205, 134);">
+            <td>3.</td>
+            <td>อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย</td>
+            <td style="text-align: center;">checkbox</td>
+        </tr>
 
-        <div class="title6">
-            <label for="book">ความพึงพอใจหนังสือเล่นนี้</label>
-            <input type="radio" id="like" name="content" value="verygood">ชอบมาก
-            <input type="radio" id="like" name="content" value="good">ชอบ
-            <input type="radio" id="like" name="content" value="middle">เฉยๆ
-            <input type="radio" id="like" name="content" value="dontlike">ไม่ชอบ
-        </div>
-        <br>
-        
-        <div class="title7">
-            <label for="sick">อาการป่วย: </label>
-            <input type="text">
-        </div>
-        <br>
+        <tr style="background-color: rgb(227, 242, 204);">
+            <td>4.</td>
+            <td>ค่าไฟฟ้า 3 เดือนที่ผ่านมา</td>
+            <td style="text-align: center;">text</td>
+        </tr>
 
-        <div class="title8">
-            <label for="vaccine">3เดือนที่ผ่านมา คุณได้รับวัคซียนหรือไม่</label>
-            <p>
-                <input type="radio" name="content2" value="yes">รับ <input type="text" name="vaccinename"><br>
-                <input type="radio" name="content2" value="no">ไม่รับ
-            </p>
-        </div>
-        <br>
+        <tr style="background-color: rgb(179, 205, 134);">
+            <td>5.</td>
+            <td>รหัสบัตรประชาชน</td>
+            <td style="text-align: center;">text</td>
+        </tr>
 
-        <div class="title9">
-            <label for="password">รหัสผ่าน: </label>
-            <input type="password">
-        </div>
-        <br>
+        <tr style="background-color: rgb(227, 242, 204);">
+            <td>6.</td>
+            <td>ความพึงพอใจของหนังสือเล่มนี้</td>
+            <td style="text-align: center;">radio</td>
+        </tr>
 
-        <div class="title10">
-            <label for="class">เวลาเข้าเรียนและสิ้นสุดการเรียน: </label>
-            <input type="time" id="classtime" name="classtime" min="09:00" max="21:00" required> <b>-</b>
-            <input type="time" id="classtime" name="classtime" min="09:00" max="21:00">
-        </div>
-        <br>
+        <tr style="background-color: rgb(179, 205, 134);">
+            <td>7.</td>
+            <td>อาการป่วย</td>
+            <td style="text-align: center;">text</td>
+        </tr>
 
-        <div class="title11">
-            <label for="doctor">วันเวลาที่ต้องพบหมอ: </label>
-            <input type="datetime-local" id="meetingtime" name="meetingtime" min="2022-07-01T00:00" max="2022-08-10T00:00">
-        </div>
+        <tr style="background-color: rgb(227, 242, 204);">
+            <td>8.</td>
+            <td>ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</td>
+            <td style="text-align: center;">radio</td>
+        </tr>
 
-    </form>
+        <tr style="background-color: rgb(179, 205, 134);">
+            <td>9.</td>
+            <td>รหัสผ่าน</td>
+            <td style="text-align: center;">password</td>
+        </tr>
+
+        <tr style="background-color: rgb(227, 242, 204);">
+            <td>10.</td>
+            <td>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</td>
+            <td style="text-align: center;">time</td>
+        </tr>
+
+        <tr style="background-color: rgb(179, 205, 134);">
+            <td>11.</td>
+            <td>วันเวลาที่ต้องไปพบแพทย์</td>
+            <td style="text-align: center;">datetime-local</td>
+        </tr>
+           
+    </table>
 
 
 </body>
